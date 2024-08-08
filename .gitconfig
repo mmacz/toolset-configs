@@ -1,0 +1,7 @@
+[user]
+	email = marek.macznik@gmail.com
+	name = Marek Macznik
+[editor]
+	core = nvim
+[init]
+	defaultBranch = main
