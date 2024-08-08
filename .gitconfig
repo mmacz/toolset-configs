@@ -1,9 +1,26 @@
 [user]
 	email = marek.macznik@gmail.com
-	name = Marek Macznik
+    name = Marek Macznik
 [editor]
 	core = nvim
 [init]
 	defaultBranch = main
 [push]
 	autoSetupRemote = true
+[alias]
+    adog = log --all --decoreate --oneline --graph
+    rup = remote update origin --prune
+    co = checkout
+    cb = checkout -b
+    chbtw = "!git log --oneline \"$1\"...\"$2\" #"
+    undo = reset --soft HEAD^
+    sup = submodule update
+    supi = submodule update --init
+    sde = submodule deinit --all --force
+    bd = branch -D
+    aliases = config --get-regexp ^alias
+[filter "lfs"]
+    required = true
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
