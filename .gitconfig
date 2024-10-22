@@ -1,6 +1,17 @@
 [user]
 	email = marek.macznik@gmail.com
     name = Marek Macznik
+[core]
+    pager = delta
+[interactive]
+    diffFilter = delta --color-only
+[delta]
+    navigate = true
+    side-by-side = true
+[merge]
+    conflictstyle = diff3
+[diff]
+    colorMoved = default
 [editor]
 	core = nvim
 [init]
@@ -8,7 +19,7 @@
 [push]
 	autoSetupRemote = true
 [alias]
-    adog = log --all --decoreate --oneline --graph
+    adog = log --all --decorate --oneline --graph
     rup = remote update origin --prune
     co = checkout
     cb = checkout -b
